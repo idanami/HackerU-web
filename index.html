@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css</title>
+        <link rel="stylesheet" href="main.css">
+<!--    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
+<!--
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+                                       minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="backdrop"></div>
+        
+        <header class="main-header">
+            <div>
+                <ul class="main-header__details">
+                    <li class="main-header__detail">
+                        <a>כניסת סטודנטים</a>
+                    </li>
+                    <li class="main-header__detail">
+                        <a>|</a>
+                    </li>
+                    <li class="main-header__detail">
+                        <a>בלוג</a>
+                    </li>
+                    <li class="main-header__detail">
+                        <a>|</a>
+                    </li>
+                    <li class="main-header__detail">
+                        <a>הטבות לסטודנטים</a>
+                    </li>
+                    <li class="main-header__detail main-header__detail_none">
+                        <a>|</a>
+                    </li>
+                    <li class="main-header__detail main-header__detail_none">
+                        <a>ייעוץ לימודים. 03-7207027</a>
+                    </li>
+                    <li class="main-header__detail main-header__detail_none">
+                        <a>|</a>
+                    </li>
+                    <li class="main-header__detail main-header__detail_none">
+                        <a>שירות לסטודנטים. 03-631-5565</a>
+                    </li>
+                    <li>
+                        <div class="main-header__search">
+                            <form>
+                                <input type="search" placeholder="חיפוש">
+                            </form>
+                            <div class="main-header__search--boundaryline"></div>
+                        <a>🔍</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        
+        <section class="main-nav__section">
+                <button class="toggle-button">
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar-onclick">x</span>
+                </button>  
+            <div class="main-nav">
+                
+                <nav>
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item__a">קורסים</a>
+                            <div class="main-nav__item__row-descriptions">
+                               <div class="main-nav__item__row-description">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>קורס אנימציה תלת מימדית תוכנת מאיה עם התמחות ב-ZBrush</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס פיתוח משחקים Gaming & VR</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס DBA Master</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס פיתוח תוכנה NET Core. </a>
+                                        </li>  
+                                        <li>
+                                            <a>קורס מפתחי אוטומציה ל-QA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-nav__item__row-description">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>קורס עיצוב גרפי עם התמחות ב-UI/UX</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס בניית אתרים - Full Stack Development</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס פיתוח אפליקציות ל-Android ול-iPhone</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס ניהול שרתי לינוקס (Linux)</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                                <div class="main-nav__item__row-description">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>קורס סייבר ואבטחת מידע Ethical Hacking</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס ניהול רשתות, אבטחת מידע ומחשוב ענן</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס QA בודק תוכנה</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item__a">אודות</a>
+                            <div class="main-nav__item__row-descriptions">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>אודות האקריו</a>
+                                        </li>
+                                        <li>
+                                            <a>שאלות נפוצות</a>
+                                        </li>
+                                        <li>
+                                            <a>מרכז בחינות הסמכה</a>
+                                        </li>
+                                        <li>
+                                            <a>דרושים</a>
+                                        </li>  
+                                        <li>
+                                            <a>לוח חופשות</a>
+                                        </li>
+                                        <li>
+                                            <a>מהעיתונות</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item__a">למה HackerU</a>
+                            <div class="main-nav__item__row-descriptions">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>איך זה עובד</a>
+                                        </li>
+                                        <li>
+                                            <a>התחייבות חוזית לעבודה</a>
+                                        </li>
+                                        <li>
+                                            <a>סגל מרצים מנצח</a>
+                                        </li>
+                                        <li>
+                                            <a>תכנית לימודים מקיפה</a>
+                                        </li>  
+                                        <li>
+                                            <a>מיקום מרכזי</a>
+                                        </li>
+                                        <li>
+                                            <a>הסבת אקדמאים</a>
+                                        </li>
+                                        <li>
+                                            <a>HackerU Freelance</a>
+                                        </li>
+                                        <li>
+                                            <a>השלמה תואר ראשון</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item__a">השמה</a>
+                            <div class="main-nav__item__row-descriptions">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>השמה</a>
+                                        </li>
+                                        <li>
+                                            <a>משרות בלעדיות לסטודנטים</a>
+                                        </li>
+                                        <li>
+                                            <a>חברות איתן אנו עובדים</a>
+                                        </li>
+                                        <li>
+                                            <a>מחפשים עבודה?</a>
+                                        </li>  
+                                        <li>
+                                            <a>בניית קריירה בהייטק</a>
+                                        </li>
+                                    </ul>
+                                </div>                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item__a">מפות הגעה</a>
+                            <div class="main-nav__item__row-descriptions">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>מפות הגעה</a>
+                                        </li>
+                                        <li>
+                                            <a>לימודים במרכז - רמת גן</a>
+                                        </li>
+                                        <li>
+                                            <a>לימודים בחיפה</a>
+                                        </li>
+                                        <li>
+                                            <a>לימודים בירושלים</a>
+                                        </li>  
+                                        <li>
+                                            <a>לימודים בבאר שבע</a>
+                                        </li>
+                                    </ul>
+                                </div> 
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item__a">סיפורי הצלחה</a>
+                            <div class="main-nav__item__row-descriptions">
+                                    <ul class="main-nav__item__row-description__list">
+                                        <li>
+                                            <a>סיפורי הצלחה</a>
+                                        </li>
+                                        <li>
+                                            <a>עדויות בוגרים</a>
+                                        </li>
+                                        <li>
+                                            <a>עדויות מעסיקים</a>
+                                        </li>
+                                        <li>
+                                            <a>עובדות בוגרים</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="main-nav__item">
+                            <a>השכרת כיתות</a>
+                        </li>    
+                        <li class="main-nav__item">
+                            <div class="main-nav__iconsoldiers">חייל <br>משוחרר
+                                <a>לחץ/י כאן</a>
+                            </div>     
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav__items">
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__item__a">קורסים</a>
+                            <div class="mobile-nav__item__row-descriptions">
+                                    <ul class="mobile-nav__item__row-description__list">
+                                        <li>
+                                            <a>קורס אנימציה תלת מימדית תוכנת מאיה עם התמחות ב-ZBrush</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס פיתוח משחקים Gaming & VR</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס DBA Master</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס פיתוח תוכנה NET Core. </a>
+                                        </li>  
+                                        <li>
+                                            <a>קורס מפתחי אוטומציה ל-QA</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס עיצוב גרפי עם התמחות ב-UI/UX</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס בניית אתרים - Full Stack Development</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס פיתוח אפליקציות ל-Android ול-iPhone</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס ניהול שרתי לינוקס (Linux)</a>
+                                        </li>  
+                                        <li>
+                                            <a>קורס סייבר ואבטחת מידע Ethical Hacking</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס ניהול רשתות, אבטחת מידע ומחשוב ענן</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט</a>
+                                        </li>
+                                        <li>
+                                            <a>קורס QA בודק תוכנה</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__item__a">אודות</a>
+                                    <ul class="mobile-nav__item__row-description__list">
+                                        <li>
+                                            <a>אודות האקריו</a>
+                                        </li>
+                                        <li>
+                                            <a>שאלות נפוצות</a>
+                                        </li>
+                                        <li>
+                                            <a>מרכז בחינות הסמכה</a>
+                                        </li>
+                                        <li>
+                                            <a>דרושים</a>
+                                        </li>  
+                                        <li>
+                                            <a>לוח חופשות</a>
+                                        </li>
+                                        <li>
+                                            <a>מהעיתונות</a>
+                                        </li>
+                                    </ul>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__item__a">למה HackerU</a>
+                                    <ul class="mobile-nav__item__row-description__list">
+                                        <li>
+                                            <a>איך זה עובד</a>
+                                        </li>
+                                        <li>
+                                            <a>התחייבות חוזית לעבודה</a>
+                                        </li>
+                                        <li>
+                                            <a>סגל מרצים מנצח</a>
+                                        </li>
+                                        <li>
+                                            <a>תכנית לימודים מקיפה</a>
+                                        </li>  
+                                        <li>
+                                            <a>מיקום מרכזי</a>
+                                        </li>
+                                        <li>
+                                            <a>הסבת אקדמאים</a>
+                                        </li>
+                                        <li>
+                                            <a>HackerU Freelance</a>
+                                        </li>
+                                        <li>
+                                            <a>השלמה תואר ראשון</a>
+                                        </li>
+                                    </ul>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__item__a">השמה</a>
+                                    <ul class="mobile-nav__item__row-description__list">
+                                        <li>
+                                            <a>השמה</a>
+                                        </li>
+                                        <li>
+                                            <a>משרות בלעדיות לסטודנטים</a>
+                                        </li>
+                                        <li>
+                                            <a>חברות איתן אנו עובדים</a>
+                                        </li>
+                                        <li>
+                                            <a>מחפשים עבודה?</a>
+                                        </li>  
+                                        <li>
+                                            <a>בניית קריירה בהייטק</a>
+                                        </li>
+                                    </ul>
+                    </li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__item__a">מפות הגעה</a>
+                                    <ul class="mobile-nav__item__row-description__list">
+                                        <li>
+                                            <a>מפות הגעה</a>
+                                        </li>
+                                        <li>
+                                            <a>לימודים במרכז - רמת גן</a>
+                                        </li>
+                                        <li>
+                                            <a>לימודים בחיפה</a>
+                                        </li>
+                                        <li>
+                                            <a>לימודים בירושלים</a>
+                                        </li>  
+                                        <li>
+                                            <a>לימודים בבאר שבע</a>
+                                        </li>
+                                    </ul>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__item__a">סיפורי הצלחה</a>
+                                    <ul class="mobile-nav__item__row-description__list">
+                                        <li>
+                                            <a>סיפורי הצלחה</a>
+                                        </li>
+                                        <li>
+                                            <a>עדויות בוגרים</a>
+                                        </li>
+                                        <li>
+                                            <a>עדויות מעסיקים</a>
+                                        </li>
+                                        <li>
+                                            <a>עובדות בוגרים</a>
+                                        </li>  
+                                    </ul>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a>השכרת כיתות</a>
+                        </li> 
+                    </ul>
+                </nav>
+                
+                <div class="icon-hackeru">
+                    <a href="index.html" class="main-nav__icon">
+                        <img src="https://www.hackeru.co.il/assets/site/images/logo.png" alt="uHost     - Your favorite hosting company">
+                    </a>
+                </div>       
+            </div>
+        </section>
+        
+        <div class="main-nav__banner">
+            המרכז להשמה והכשרת עובדים למקצועות ההייטק
+            <br><span>!מספר אחת בהשמת בוגרים בהייטק
+            </span>
+        </div>
+        
+        <section class="courses">
+            <div  class="courses-title">
+                <h3>הקורסים שלנו עכשיו גם אונליין</h3>
+            </div>
+            <div  class="courses-list">
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.35.16-cyber.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#5E6BB2 "></div>
+                    <div class="course-name">קורס סייבר ואבטחת מידע Ethical Hacking</div>
+                </div>   
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.34.59-network-management.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#EF4523 "></div>
+                    <div class="course-name">קורס ניהול רשתות, אבטחת מידע ומחשוב ענן</div>
+                </div> 
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.41.07-marketing.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#77C044 "></div>
+                    <div class="course-name">קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט</div>
+                </div>                  
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.32.31-qa.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#0598A8 "></div>
+                    <div class="course-name">בודק תוכנה QA קורס</div>
+                </div>
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.34.31-graphic-design.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#154B9C "></div>
+                    <div class="course-name">קורס עיצוב גרפי עם התמחות ב-UI/UX</div>
+                </div>
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.35.50-web-dev.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#1E5F30 "></div>
+                    <div class="course-name">קורס בניית אתרים - Full Stack Development</div>
+                </div>
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.38.36-apps.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#8352A1 "></div>
+                    <div class="course-name">קורס פיתוח אפליקציות ל-Android ול-iPhone</div>
+                </div>       
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.33.47-linux.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#ED1859 "></div>
+                    <div class="course-name">קורס ניהול שרתי לינוקס (Linux)</div>
+                </div>              
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.36.06-animation.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#39A4DC "></div>
+                    <div class="course-name">קורס אנימציה תלת מימדית תוכנת מאיה עם התמחות ב-ZBrush</div>
+                </div>
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.37.06-gaming.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#25B9A2 "></div>
+                    <div class="course-name">קורס פיתוח משחקים Gaming & VR</div>
+                </div>                  
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.37.24-dba.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#D72816 "></div>
+                    <div class="course-name">קורס DBA Master</div>
+                </div>   
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.33.06-net.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#F36E44 "></div>
+                    <div class="course-name">קורס פיתוח תוכנה NET Core. </div>
+                </div>
+                <div class="course-names  course-names__animation">
+                    <div class="course-name__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.36.41-automation.svg">
+                    </div>
+                    <div class="course-seperator" style="background:#352F8A "></div>
+                    <div class="course-name">קורס מפתחי אוטומציה ל-QA</div>
+                </div>     
+            </div>
+            <div class="contact-info">
+                <div>
+                    <span class="contact-info__subtitle">?רוצה לשמוע עוד</span>
+                </div>
+                <div class="contact-info__details">
+                    <form action="index.html" class="form-info">
+                        <div class="contact-info__input">
+                            <label for="first-name"><span class="separation">|</span>  שם מלא</label>
+                            <input type="text">
+                        </div>
+                        <div class="contact-info__input">
+                            <label for="last-name"><span class="separation">|</span>     טלפון</label>
+                            <input type="text">
+                        </div>
+                        <div class="contact-info__input">
+                            <label for="email"><span class="separation">|</span>  אי-מייל</label>
+                            <input type="email">
+                        </div>
+                        <div class="contact-info__checkbox">
+                            <input type="checkbox">
+                            <label for="agree-terms">אני מאשר קבלת עדכונים ומבצעים מהאקריו בכפוף לתקנון.</label>
+                        </div>
+                        <button type="submit" class="button">דברו איתי!</button>
+                    </form>
+                </div> 
+            </div>
+            <div class="buisness">
+                <div class="buisness-icon">
+                    <img src="https://www.hackeru.co.il/assets/site/images/global.svg">
+                </div>
+                <div class="buisness-part">
+                    <h3>HackerU העולמית</h3>
+                    <p>
+                        ל- HackerU פריסה עולמית הכוללת שיתופי פעולה עם 
+                        אוניברסיטאות מובילות בארה"ב, הודו ואירופה. במסגרת שיתוף
+                        הפעולה HackerU מציעה מסלולי לימוד שונים כדוגמת: סייבר
+                        ואבטחת מידע, שיווק דיגיטלי, UI\UX ועוד.
+                    </p>
+                    <p style="color: #213a7f; font-weight: bold;">קרא עוד  </p>
+                </div>
+                <div class="buisness-icon">
+                    <img src="https://www.hackeru.co.il/assets/site/images/buildings.svg">
+                </div>
+                <div class="buisness-part">
+                    <h3>HackerU לעסקים</h3>
+                    <p>
+                        HackerU-Pro החטיבה העסקית של HackerU  מתמחה בהכשרה
+                        מקצועית בתחומי ההייטק והעיצוב השונים. מתן ייעוץ מקצועי לעסקים
+                        וגופים ממשלתיים בנושאים טכנולוגיים מגוונים.
+                    </p>
+                    <p style="color: #213a7f; font-weight: bold;">קרא עוד  </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="benefits">
+            <div class="benefits-subtitle">
+                <h2>היתרונות ללומדים בהאקריו</h2>
+            </div>
+            <div class="benefits-list">
+                <div class="benefit benefit-animation">
+                    <div class="benefit__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/advs_1.svg">
+                    </div>
+                    <div class="benefit-text">
+                    <h4 class="benefit-text__title">שיטת מיון ייחודית</h4>
+                    <p class="benefit-text__description">שיטת מיון ייחודית לזיהוי והתאמת כישוריך בתחומי ההייטק הכוללת התנסות מעשית ללא סיכון כספי</p>
+                        <a>שיטת המיון</a>
+                    </div>
+                </div>
+                <div class="benefit benefit-animation">
+                    <div class="benefit__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/advs_6.svg">
+                    </div>
+                    <div class="benefit-text">
+                    <h4 class="benefit-text__title">ללמוד מהבית מקצוע Online</h4>
+                    <p class="benefit-text__description">קורסים אונליין הישר בשידור LIVE למחשב שלכם בבית. אותם מסלולי הלימוד והתכנים עם הטכנולוגיה האיכותית והטובה ביותר.</p>
+                    </div>
+                </div>
+                <div class="benefit benefit-animation">
+                    <div class="benefit__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/advs_3.svg">
+                    </div>
+                    <div class="benefit-text">
+                    <h4 class="benefit-text__title">סגל מרצים מנצח</h4>
+                    <p class="benefit-text__description">סגל הוראה המתמחה במקצועות ההייטק המבוקשים בניהם מנהלים בכירים בחברות הייטק, יזמים ועצמאיים בעלי חברות וניסיון מעשי רב שנים. אחרת איך תלמדו את הפרקטיקה הנדרשת בשוק העבודה?</p>
+                    <a>מיהם המרצים?</a>
+                    </div>
+                </div>
+                <div class="benefit benefit-animation">
+                    <div class="benefit__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/advs_4.svg">
+                    </div>
+                    <div class="benefit-text">
+                    <h4 class="benefit-text__title">מלגת לימודים והתחייבות חוזית לעבודה</h4>
+                    <p class="benefit-text__description">מאות מעסיקים, מנכל"ים, סמנכל"ים ומנהלות משאבי אנוש מהחברות הגדולות בשוק שעובדים איתנו כדי למצוא לכם עבודה בסיום הלימודים! סטודנט שעבר בהצלחה את שלב המיון יקבל התחייבות חוזית לעבודה ומלגת לימודים עד ₪10,000 גובה המלגה תלוי במסלול ההכשרה שבחרת</p>
+                                  <a>מי מעסיק את הבוגרים שלנו?</a>
+                    </div>
+                </div>
+                <div class="benefit benefit-animation">
+                    <div class="benefit__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/advs_5.svg">
+                    </div>
+                    <div class="benefit-text">
+                    <h4 class="benefit-text__title">תוכנית לימודים מקיפה</h4>
+                    <p class="benefit-text__description">הקורסים המקיפים והפרקטיים ביותר מבחינת כמות שעות ותכנים המותאמים לשוק העבודה</p>
+                                   <a>מה לומדים?</a>
+                    </div>
+                </div>
+                <div class="benefit benefit-animation">
+                    <div class="benefit__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/advs_2.svg">
+                    </div>
+                    <div class="benefit-text">
+                    <h4 class="benefit-text__title">מיקום מרכזי</h4>
+                    <p class="benefit-text__description">קל להגיע וקל לחזור, ארבעה סניפים בערים מרכזיות רמת גן, ירושלים, באר שבע וחיפה, רק 5 דקות מתחנת הרכבת</p>
+                                   <a>איפה אנחנו יושבים?</a>
+</div>
+                </div>
+                <div class="benefit benefit-animation">
+                    <div class="benefit__image">
+                        <img src="https://www.hackeru.co.il/assets/site/images/advs_7.svg">
+                    </div>
+                    <div class="benefit-text">
+                    <h4 class="benefit-text__title">פריסה עולמית</h4>
+                    <p class="benefit-text__description">שיתופי פעולה עם אוניברסיטאות מובילות ברחבי ארה"ב, הודו ואירופה</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="hackeru-description">
+            <div class="hackeru-description__main">
+            <div class="hackeru-description__video">
+                <img src="https://www.hackeru.co.il/assets/site/images/vd.png">
+                <p><span class="moreinfo">עוד קצת מידע</span></p>
+            </div>
+                <h3 class="hackeru-description__main-title">איך זה עובד?</h3>
+                <div class="hackeru-description__info">
+                    <p>
+            HackerU מקיימת קשרי עבודה ענפים עם למעלה מ- 1400 חברות ברחבי הארץ ובעצם משמשת כקרש קפיצה לעולם ההייטק. חברות רבות כבר יודעות שב– HackerU הן יכולות למצוא כוח אדם מקצועי, מיומן ואיכותי בעל ידע פרקטי ויישומי לעבודה. ל-HackerU שיתופי פעולה ברחבי העולם, שם היא מלמדת את קורסי סייבר ואבטחת מידע ושיווק דיגיטלי באוניברסיטאות המובילות בארה"ב, הודו ואירופה. 
+            </p>
+                    <p> 
+                התהליך מתחיל מראיון טלפוני ופגישה אישית עם יועץ לימודים המכוון את המועמד לקורס המתאים לו ביותר וממשיך לשלב המיון שנע בין 20 ל-40 שעות בו ניתן להתנסות בתכנים השונים ולבדוק האם ישנה התאמה בין המועמד לבין מסלול הלימודים הנבחר. שלב המיון הינו ללא כל סיכון כספי מצד המועמד. במידה והמועמד אינו עובר את מבחן סיום שלב המיון או לחלופין מחליט כי התחום אינו מתאים לו והוא לא מעוניין להמשיך ללמוד - שכר הלימוד יוחזר לו במלואו.        
+            </p>
+                    <p>
+                        במידה והמועמד עובר את שלב המיון בהצלחה ומעוניין להמשיך לקורס המלא, ייחתם מולו חוזה השמה ויקבל מלגת לימודים עד 10,000 ₪ תלוי במסלול אותו הוא מעוניין ללמוד. מטרתנו העיקרית היא להביא כמה שיותר בוגרים ישירות אל עולם ההייטק בעזרת סגל מרצים מהמוביל בתחום ומערך לימודים מקיף ומקצועי הנותן לכל סטודנט את ארגז הכלים הנחוץ לו לפרוץ לעולם ההייטק.
+            </p>
+                </div>
+                <h4 class="hackeru-description__title">התהליך שלנו</h4>
+                <div class="processes">
+                    <div class="process process1">
+                        <div class="process_num" style="color: rgb(5, 152, 168);">1</div>
+                        <h5 class="process_subtitle">פגישת ייעוץ</h5>
+                        <div class="process_underline"></div>
+                        <p>
+                            בפגישה נערך ראיון אישי עם המועמד, אנו בודקים את הרקע שלו ואת יכולת ההשתלבות שלו בתעשייה
+                        </p>
+                    </div>
+                    <div class="process process2">
+                        <div class="process_num" style="color: rgb(57, 164, 220);">2</div>
+                        <h5 class="process_subtitle">קורס מיון</h5>
+                        <div class="process_underline"></div>
+                        <p>
+				שלב זה אורך בין 40-20 שעות על מנת לבדוק את  יכולות המועמד ללימודי המשך ולהשמה בעבודה. לא עברת את שלב המיון ? תקבל החזר כספי של שכר הלימוד ששילמת     
+                        </p>
+                    </div>
+                    <div class="process process3">
+                        <div class="process_num" style="color: rgb(21, 75, 156);">3</div>
+                        <h5 class="process_subtitle">ללכת על בטוח</h5>
+                        <div class="process_underline"></div>
+                        <p>
+                            אחרי שעברת את שלב המיון בהצלחה ונשמת לרווחה, תקבל התחייבות חוזית לעבודה ומלגת לימודים עד 10,000 ₪ תלוי במסלול שבחרת
+                        </p>
+                    </div>
+                    <div class="process process4">
+                        <div class="process_num" style="color: rgb(53, 47, 138);">4</div>
+                        <h5 class="process_subtitle">מתחילים ללמוד</h5>
+                        <div class="process_underline"></div>
+                        <p>
+                הלימודים אצלנו פרקטיים ומטרתם לשלב את הבוגרים שלנו בתעשייה, לצורך זה תוכנית הלימודים שלנו היא המקצועית והמקיפה ביותר  ובזכותה אנחנו מספר אחת בהשמת בוגרים בהייטק
+                        </p>
+                    </div>
+                </div>
+                <div class="meeting"><button>קביעת פגישת ייעוץ</button></div>
+            </div>
+        </section>
+        
+        <div class="animation">
+            <ul>
+                <li>,
+                    מבוגרי
+                    קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                    מנהל רשת בחברת "Security" //&nbsp;&nbsp;
+                </li>
+                <li>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                Unique SysAdmin בחברת "WebPick" &nbsp;&nbsp;//&nbsp;&nbsp;
+                </li>
+                <li>,
+                מבוגרי
+                קורס פיתוח תוכנה NET Core. ,
+                ראש צוות תכנות בחברת "WEBID" &nbsp;&nbsp;//&nbsp;&nbsp;
+                </li>
+                <li>,
+                    מבוגרי
+                    קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט,
+                    עובדת כיום בחברת אתריקס &nbsp;&nbsp;//&nbsp;&nbsp;
+                </li>
+                <li>,
+                    מבוגרי
+                    קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                    חברת קונסיסט &nbsp;&nbsp;//&nbsp;&nbsp;
+                </li>            
+                <li>,
+                מבוגרי
+                קורס פיתוח תוכנה NET Core. ,
+                מתכנת בחברת "DataPro" &nbsp;&nbsp;//&nbsp;&nbsp;
+                </li>            
+            </ul>
+        </div>
+        <footer class="main-footer">
+            <div class="main-footer_title">  צרו קשר לכל שאלה (מלאו פרטיכם ונחזור אליכם בהקדם)</div>
+            <div class="contact-info__details">
+                    <form action="index.html" class="form-info">
+                        <div class="contact-info__input">
+                            <label for="first-name"><span class="separation">|</span>  שם מלא</label>
+                            <input type="text">
+                        </div>
+                        <div class="contact-info__input">
+                            <label for="last-name"><span class="separation">|</span>     טלפון</label>
+                            <input type="text">
+                        </div>
+                        <div class="contact-info__input">
+                            <label for="email"><span class="separation">|</span>  אי-מייל</label>
+                            <input type="email">
+                        </div>
+                        <button type="submit" class="button">דברו איתי!</button>
+                        <div class="contact-info__checkbox">
+                            <input type="checkbox">
+                            <label for="agree-terms">אני מאשר קבלת עדכונים ומבצעים מהאקריו בכפוף לתקנון.</label>
+                        </div>
+                    </form>
+            </div> 
+        </footer>
+        
+        <div class="log-in">
+            <div class="close-item" style="font-size: 2rem; cursor: pointer;">x</div>
+            <h3>עברנו ללימוד אונליין</h3>
+            <div class="log-in__main">
+                <h2>ללמוד הייטק ודיגיטל LIVE בזמן שנוח לך</h2>
+                <h4>רוצה לשמוע עוד?</h4>
+                <div class="log-in__info">
+                    <form action="index.html" class="log-in__form-info">
+                        <div class="log-in__info__input">
+                            <input type="text" placeholder="שם מלא">
+                        </div>
+                        <div class="log-in__info__input">
+                            <input type="text" placeholder="טלפון">
+                        </div>
+                        <div class="log-in__info__input">
+                            <input type="email" placeholder="אי-מייל">
+                        </div>
+                        <div class="log-in__info__checkbox">
+                            <input type="checkbox">
+                            <label for="agree-terms">אני מאשר קבלת עדכונים ומבצעים מהאקריו.</label>
+                        </div>
+                        <button type="submit" class="log-in__button">לשיחת ייעוץ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
